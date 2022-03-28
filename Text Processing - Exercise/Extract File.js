@@ -3,7 +3,8 @@ function extractFile(str) {
 
   let lastString = strAsArray.pop();
   let lastAsArray = lastString.split(".");
+  let extenstion1 = lastAsArray.pop()
 
-  console.log(`File name: ${lastAsArray[0]}`);
-  console.log(`File extension: ${lastAsArray[lastAsArray.length - 1]}`);
+  console.log(`File name: ${lastAsArray.join(".")}`);
+  console.log(`File extension: ${extenstion1}`);
 }
